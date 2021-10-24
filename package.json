@@ -1,0 +1,22 @@
+{
+  "name": "course19",
+  "version": "1.0.0",
+  "description": "node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wodya/Course19.git"
+  },
+  "author": "wodya@wodya.ru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wodya/Course19/issues"
+  },
+  "homepage": "https://github.com/Wodya/Course19#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
