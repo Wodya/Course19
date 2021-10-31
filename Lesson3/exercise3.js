@@ -13,8 +13,8 @@ class Writes {
     let ip = ipFind[1];
     let stream = this.fileSet.get(ip);
     if(stream === undefined) {
-      const fileName = `access_${ip}.log`;
-      stream = new fs.createWriteStream(fileName);
+      const fileName = `${ip}_requests.log`;
+      stream = new fs.createWriteStream(fileName, {autoClose: false});
       this.fileSet.set(ip, stream);
       stream.on('error', err => {console.log(`Ошибка записи файла ${fileName}: ${err}`)});
       stream.on('close', () => {console.log(`Файл закрыт: ${fileName}`)});
