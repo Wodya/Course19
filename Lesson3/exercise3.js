@@ -57,5 +57,8 @@ stream.on('end', () => {
   writes.closeAllFiles();
 });
 
-stream.on('error', err => {console.log(`Ошибка чтения файла: ${err}`)});
+stream.on('error', err => {
+  console.log(`Ошибка чтения файла: ${err}`);
+  writes.closeAllFiles();
+});
 
