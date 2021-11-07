@@ -79,6 +79,7 @@ const showFileContents = async (filepath, findString) => {
 }
 
 module.exports = {
+    isDir,
     getFileNamesInDirectory,
     promptUser,
     showFileContents,
